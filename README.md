@@ -25,15 +25,13 @@ state-driven-jailbreak/
 │   ├── prompts.py                      # Attack prompt templates
 │   ├── personality_prompts.py          # Big Five persona prompts
 │   ├── config.py                       # Model paths, decoding settings, safe prompt
+|   ├── judges.py                       # Rule-based judge
 │   └── utils.py                        # Utility functions
 ├── refusal_analysis/
 │   ├── extract_hidden_states.py        # Step 1: extract hidden states (Llama-2-13B)
 │   ├── train_probe.py                  # Step 2: train probe + compute projections
 │   ├── analyze_paraphrase_projection.py # Step 3: paraphrase projection analysis
 │   └── personality_prompts_semantic.py # Paraphrase prompts (10 per trait)
-├── evaluation/
-│   ├── judges.py                       # Rule-based and GPT-4 judge
-│   └── run_gpt_judge.py                # GPT-4 judge runner script
 └── .gitignore
 ```
 
